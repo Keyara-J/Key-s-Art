@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        h1 {
+            color:#DECCEA;
+            font-size: 5em;
+            text-align: center;
+            font-style: Monospace;      
+        }
+        h2 {
+            color:#4C0075;
+        }
+        h3 {
+            color:#4C0075;
+            font-size: 20px;
+            text-align: center;
+            font-style: Monospace;      
+        }
+        .top-nav {
+            position:sticky;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: #9862BF;
+            padding: 15px 0;
+            border-bottom: 3px solid #4C0075;
+        }
+        .top-nav a {
+            margin: 15px;
+            text-decoration: underline;
+            font-size: 30px;  
+        }
+        .top-nav a.active {
+            color: #DECCEA !important;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 3px solid #DECCEA;
+            padding-bottom: 5px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .item {
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            background: #DECCEA;
+        }
+        .item img {
+            width: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            nav a{
+                display: inline-block;
+                margin: 15px 0;
+            }
+            .item{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .gallery{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    </Style>
+
+</head>
+<body style="background-color: #9862BF;">
+<div class="top-nav">    
+    <nav>
+        <a style="color: #4C0075" href="index.html">Home Page</a>
+        <a style="color: #4C0075" href="ArtProjects1.html"> Page: 1 </a>
+        <a style="color: #4C0075" href="ArtProjects2.html"> Page: 2 </a>  
+        <a style="color: #4C0075" a class="active" href="ArtProjects3.html"> Page: 3 </a>
+    </nav>
+</div>
+<h1 style="color: #DECCEA;"> -- Holiday Art Projects -- </h1> 
+
+<div class="gallery">
+    <div class="item">
+        <h2>Tall Pipe Cleaner Tree:</h2>
+        <img src="images/Pipe cleaner tree1.jpg" alt="" width="400">
+        <p></p>
+    </div>
+
+    <div class="item">
+        <h2>Short Pipe Cleaner Tree:</h2>
+        <img src="images/Pipe cleaner tree2.jpg" alt="" width="400">
+        <p></p>
+    </div>
+
+    <div class="item">
+        <h2></h2>
+        <img src="" alt="" width="400">
+        <p></p>
+    </div>
+
+    <div class="item">
+        <h2></h2>
+        <img src="" alt="" width="400">
+        <p></p>
+    </div>
+
+    
+    <div class="item">
+        <h2></h2>
+        <img src="" alt="" width="400">
+        <p></p>
+    </div>
+
+    <div class="item">
+        <h2></h2>
+        <img src="" alt="" width="400">
+        <p></p>
+    </div>
+
+    <div class="item">
+        <h2></h2>
+        <img src="" alt="" width="400">
+        <p></p>
+    </div>
+
+    <div class="item">
+        <h2></h2>
+        <img src="" alt="" width="400">
+        <p></p>
+    </div>
+</div>
+<h3> -- Page 3 -- </h3> 
+</body>
+</html>

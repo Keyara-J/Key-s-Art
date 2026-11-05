@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key's Art</title>
+    <style>
+        .logo-circle{
+            position:absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: 460px;          /* size of the circle */
+            height: auto;
+            border-radius: 50%;    /* makes it a circle */
+            border: 5px solid #9862BF;  /* circle color */
+            /*display: flex;*/
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;     /* centers it */
+            background-color: #DECCEA;
+        }
+        .main-logo{
+            width: 450px;  
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        nav a{
+            margin: 15px 0;
+            text-decoration: underline;
+            font-size: 40px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            gap: 30px;
+            border-bottom: 3px solid #DECCEA;
+        }
+        .scroll-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: #DECCEA;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            margin-top: 30px;
+        }
+        .scroll-content {
+            display: flex;
+            gap: 20px;
+            animation: scroll 30s linear infinite;
+        }
+        @keyframes scroll {
+            0% {transform: translateX(0)}
+            100% {transform: translateX(-100%)}
+        }
+        @media (max-width: 600px) {
+            nav a{
+                display: flex;
+                margin-top: 10px 0;
+                margin-bottom: 10px 0;
+                gap: 20px;
+                font-size: 20px;
+            }
+            .scroll-content img {
+                width: 180px;
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textarea{
+            width: 150px;
+            height: 150px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background: #DECCEA;
+            color: #9862BF;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #cdb7db;
+        }
+        .section{
+            text-align: center;
+            margin-top: 50px;        /* space above */
+            padding: 30px 0;         /* space inside */
+            border-top: 3px solid #DECCEA;   /* line above */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+        }
+        
+
+    </style>
+</head>
+<body style="background-color: #9862BF;">
+<nav>
+    <a style="color: #DECCEA" href="ArtProjects1.html">Art Projects</a>
+    <a style="color: #DECCEA" href="photography1.html"> Photography </a>
+</nav>
+<div class="scroll-container">
+<div class="logo-circle">
+    <img class="main-logo" src="images/Logo.png" alt="Key's Art Logo">  
+</div>
+<h1>  </h1> 
+    
+
+    <div class="scroll-content"> 
+            <img src="images/Minecraft banner.jpg" alt="Minecraft Banner" width="600">
+            <img src="images2/dome2.JPG" alt="dome" width="600" height="400">
+            <img src="images/Sfa axe handle1.jpg" alt="handle" width="600" height="400">
+            <img src="images/Sfa axe handle2.jpg" alt="handle2" width="600" height="400">
+            <img src="images2/sitting1.JPG" alt="dome" width="600" height="400">
+            <img src="" alt="" width="600">
+            <img src="images/Yin yang catpaw .jpg" alt="yinyang" width="600">
+            <img src="images2/sitting2.JPG" alt="dome" width="600" height="400">
+    </div>
+        
+</div>
+
+<div class="section">
+<a style="color: #DECCEA" href="https://instagram.com/da_keys_art" class="insta-btn" target="_blank"> 
+    Art Instagram:  (@da_keys_art)
+</a>
+<br>
+<a style="color: #DECCEA" href="https://instagram.com/karajenkins22" class="insta-btn" target="_blank"> 
+    Main Instagram:  (@karajenkins22)
+</a>
+<br>
+<p></p>
+ 
+    <form action="send feedback.php" >
+        <textarea placeholder="Please provide any feedback here."></textarea>
+        <br>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</body>
+</html>
